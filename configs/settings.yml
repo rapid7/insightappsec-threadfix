@@ -1,0 +1,31 @@
+version: 0.1.0
+connections:
+  insightappsec:
+    apikey: ""
+    region: us
+  threadfix:
+    apikey: ""
+    host: http://127.0.0.1
+    port: "8080"
+exportconfigurations: []
+severitymappings:
+- InsightAppSec: SAFE
+  Threadfix: Info
+- InsightAppSec: INFORMATIONAL
+  Threadfix: Low
+- InsightAppSec: LOW
+  Threadfix: Medium
+- InsightAppSec: MEDIUM
+  Threadfix: High
+- InsightAppSec: HIGH
+  Threadfix: Critical
+internalscheduler: '*/5 * * * *'
+logging:
+  directory: ./logs/
+  filename: output.log
+  level: info
+  stdout: false
+metrics:
+  directory: ./logs/
+  filename: metrics.log
+  pretty: true
