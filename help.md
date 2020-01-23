@@ -198,7 +198,7 @@ vulnerabilities and should have little to no impact on correlation across applic
 
 # Version History
 
-* 0.1.0 - Initial integration
+* 1.0.0 - Initial release of integration
 
 # Links
 
