@@ -93,7 +93,7 @@ on macOS with:
 Once installed, the following command will compile and package the environment specific binary while skipping release to
 Github or other repositories:
 ```
-> goreleaser --snapshot --skip-publish --rm-dist
+> goreleaser release --skip-publish
 ```
 
 The generated artifacts will exist for 64-bit binaries for Windows and Linux in their respective directories:
@@ -101,6 +101,11 @@ The generated artifacts will exist for 64-bit binaries for Windows and Linux in 
 > ls dist/ | grep 'insightappsec-threadfix'
 insightappsec-threadfix_linux_amd64
 insightappsec-threadfix_windows_amd64
-rapid7-insightappsec-threadfix.exe_v0.0.0-next_Windows_64-bit.zip
-rapid7-insightappsec-threadfix_v0.0.0-next_Linux_64-bit.tar.gz
+rapid7-insightappsec-threadfix.exe_0.1.0_Windows_64-bit.zip
+rapid7-insightappsec-threadfix_0.1.0_Linux_64-bit.tar.gz
 ```
+
+### Github Action for Automated Release
+To trigger the included GitHub Action as part of the project, simply create a tag following semver (eg. v1.0.0). Once 
+the tag is created, the action will be triggered and the release with accompanying Windows and Linux packages will be 
+attached as release artifacts.

@@ -1,7 +1,6 @@
 package integration
 
 type SettingsConf struct {
-	Version              string                `yaml:"version"`
 	Connections          ConnectionsConf       `yaml:"connections"`
 	ExportConfigurations []ExportConfiguration `yaml:"exportConfigurations"`
 	SeverityMappings     []SeverityMapping     `yaml:"severityMappings"`
