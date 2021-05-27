@@ -14,8 +14,6 @@ type API struct {
 	APIClient shared.APIClient
 }
 
-const UserAgent = "r7:insightappsec-threadfix-extension-1.0.1"
-
 func (ias *API) DoSearch(searchType string, query string, index int, size int, sort string) []byte {
 	var search = SearchParameters{Type: searchType, Query: query}
 	var header = ias.FormatHeader()
@@ -221,7 +219,6 @@ func (ias *API) FormatUrl(url Url) string {
 func (ias *API) FormatHeader() map[string]string {
 	var header = make(map[string]string)
 	header["x-api-key"] = ias.Config.APIKey
-	header["User-Agent"] = UserAgent
 
 	return header
 }
