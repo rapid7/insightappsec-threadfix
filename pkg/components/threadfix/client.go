@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"net/url"
+	NetUrl "net/url"
 
 	"github.com/rapid7/strategic-integrations/appsec/rapid7-insightappsec-threadfix/pkg/shared"
 	"github.com/rapid7/strategic-integrations/appsec/rapid7-insightappsec-threadfix/pkg/shared/logging"
@@ -69,7 +69,7 @@ func (tf *API) ListScans(appId int) ([]ScanMetadata, error) {
 }
 
 func (tf *API) GetAppByName(teamName string, appName string) (Application, error) {
-	var endpoint = fmt.Sprintf("rest/applications/%s/lookup?name=%s", teamName, url.QueryEscape(appName))
+	var endpoint = fmt.Sprintf("rest/applications/%s/lookup?name=%s", teamName, NetUrl.QueryEscape(appName))
 	var header = tf.FormatHeader()
 	var url = tf.FormatUrl(endpoint)
 	var app Application
