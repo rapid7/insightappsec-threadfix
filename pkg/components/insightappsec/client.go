@@ -14,7 +14,7 @@ type API struct {
 	APIClient shared.APIClient
 }
 
-const UserAgent = "r7:insightappsec-threadfix-extension-1.0.1"
+const UserAgent = "r7:insightappsec-threadfix-extension/1.0.1"
 
 func (ias *API) DoSearch(searchType string, query string, index int, size int, sort string) []byte {
 	var search = SearchParameters{Type: searchType, Query: query}
