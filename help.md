@@ -198,6 +198,7 @@ vulnerabilities and should have little to no impact on correlation across applic
 
 # Version History
 
+* 1.0.1 - Fixed issue with TF application names containing spaces, added User-Agent to IAS requests
 * 1.0.0 - Initial release of integration
 
 # Links

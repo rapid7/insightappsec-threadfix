@@ -3,7 +3,7 @@ products: [insightappsec]
 name: insightappsec_threadfix
 title: Threadfix Scan Import
 description: Import InsightAppSec scans into Threadfix to correlate scan results across multiple application security tools
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 status: []
 support: rapid7
