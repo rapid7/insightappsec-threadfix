@@ -1,0 +1,84 @@
+{
+    "manifestVersion": "1",
+    "extension": {
+      "type": "package",
+      "file": "insightappsec_threadfix.zip"
+    },
+    "id": "insightappsec-threadfix",
+    "title": "Threadfix Scan Import",
+    "overview": "Import InsightAppSec scans into Threadfix to correlate scan results across multiple application security tools",
+    "description": "The Rapid7 InsightAppSec Threadfix integration is a utility designed to import InsightAppSec scan data to Threadfix to effectively correlate scan results across multiple application security tools. The integration provides flexible configuration options that allow the user to filter scan data by application, scan configuration, and timeframe. Once scan data is imported into Threadfix, the scan results can be visualized and correlated with other security scanning tools. Getting started with the utility is as easy as downloading the integration package to a system with access to both the InsightAppSec and Threadfix APIs. Once configured it is easy to begin importing InsightAppSec scan results into Threadfix for teams to use.",
+    "keyFeatures": [
+        "Imports InsightAppSec scan data into Threadfix",
+        "Provides simple command line interface (CLI) walkthrough for configuration",
+        "Offers flexible configuration for effectively filtering InsightAppSec data"
+    ],
+    "requirements": [
+        "Rapid7 Platform API Key",
+        "Threadfix API key"
+    ],
+    "resources": {
+        "sourceUrl": "https://github.com/rapid7/insightappsec-threadfix",
+        "licenseUrl": "https://github.com/rapid7/insightappsec-threadfix/blob/master/LICENSE"
+    },
+    "version": "1.0.1",
+    "versionHistory": [
+        {
+            "version": "1.0.1",
+            "date": "",
+            "changes": "Fixed issue with ThreadFix application names containing spaces, added User-Agent to InsightAppSec requests."
+        },
+        {
+            "version": "1.0.0",
+            "date": "",
+            "changes": "Initial release of integration"
+        }
+    ],
+    "publisher": "rapid7",
+    "support": {
+        "type": "publisher",
+        "url": "http://www.rapid7.com"
+    },
+    "rapid7Products": [
+        {
+            "name": "insightappsec",
+            "role": "primary"
+        }
+    ],
+    "requiredRapid7Features": [],
+    "status": [],
+    "logos": {
+        "primary": "extension.png",
+        "secondary": []
+    },
+    "displayOptions": [],
+    "tags": {
+        "categories": [
+            "reporting_and_analytics",
+            "data_enrichment"
+        ],
+        "thirdPartyProducts": [],
+        "keywords": [
+            "threadfix",
+            "vulnerability_management",
+            "data_aggregation"
+        ]
+    },
+    "documentation": {
+        "type": "file",
+        "source": "help.md"
+    },
+    "media": [],
+    "links": [
+        {
+            "title": "Threadfix API Documentation",
+            "source": "https://denimgroup.atlassian.net/wiki/spaces/TDOC/pages/22842096/ThreadFix+API"
+        },
+        {
+            "title": "InsightAppSec API Documentation",
+            "source": "https://help.rapid7.com/insightappsec/en-us/api/v1/docs.html"
+        }
+    ],
+    "metadata": [],
+    "processingInstructions": []
+}
