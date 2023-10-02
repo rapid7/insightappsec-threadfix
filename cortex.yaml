@@ -1,0 +1,15 @@
+---
+info:
+  title: Insightappsec Threadfix
+  description: Utility used to import InsightAppSec scans into Threadfix
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/insightappsec-threadfix
+  x-cortex-tag: insightappsec-threadfix
+  x-cortex-type: service
+  x-cortex-domain-parents:
+  - tag: ias-integration
+openapi: 3.0.1
+servers:
+- url: "/"
